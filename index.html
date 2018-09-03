@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Corporate Ladder</title>
+</head>
+
+<body>
+    <div class="container main my-5">
+        <!-- CARD -->
+        <div class="card">
+            <div class="card-body mx-auto">
+                <!-- HEADING -->
+                <h1 class="text-center mb-2">Corporate Ladder</h1>
+
+                <!-- BEFORE START -->
+                <button type="button" class="btn btn-secondary btn-start" style="width: 300px;">Start Game</button>
+
+                <!-- AFTER START -->
+                <div class="after-start">
+                    <h4 class="text-center mt-2">Job Posting</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Office Worker - $100</li>
+                        <li class="list-group-item">Manager - $200</li>
+                        <li class="list-group-item">Supervisor - $300</li>
+                        <li class="list-group-item">VP - $400</li>
+                        <li class="list-group-item">CEO - $500</li>
+                    </ul>
+                    <div class="ui-btn mt-2">
+                        <button type="button" class="btn btn-success btn-work" style="width: 200px;">Work</button>
+                        <!-- Stats Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-stats" style="width: 200px;" data-toggle="modal" data-target="#statsModal">
+                            Stats
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MODALS -->
+    <!-- STATS MODAL -->
+    <div class="modal fade" id="statsModal" tabindex="-1" role="dialog" aria-labelledby="statsModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Stats</h5>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h6>Money:</h6> <span class="money">0</span>
+                    </div>
+                    <div>
+                        <h6>Current Job:</h6> <span class="money">Office Worker</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
