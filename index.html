@@ -23,8 +23,12 @@
                 <h1 class="text-center mb-2">Corporate Ladder</h1>
 
                 <!-- BEFORE START -->
-                <button type="button" class="btn btn-secondary btn-start" style="width: 300px;">Start Game</button>
-
+                <div class="before-start">
+                    <button type="button" class="btn btn-secondary btn-start mr-1" style="width: 300px;">Start Game</button>
+                    <!-- AUDIO ON/OFF TOGGLE-->
+                    <button type="button" class="btn btn-success btn-audio-toggle" style="width: 300px;">Audio: On</button>
+                </div>
+                
                 <!-- AFTER START -->
                 <div class="after-start">
                     <h4 class="text-center mt-2">Job Posting</h4>
@@ -61,7 +65,7 @@
                         <h6>Money:</h6> <span class="money">0</span>
                     </div>
                     <div>
-                        <h6>Current Job:</h6> <span class="money">Office Worker</span>
+                        <h6>Current Job:</h6> <span class="job-title">Office Worker</span>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -70,6 +74,15 @@
             </div>
         </div>
     </div>
+
+    <div class="audio-section">
+        <!-- AUDIO -->
+        <audio id="audio">
+            <source src="audio/Cha_Ching_Register-Muska666-173262285 (1).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    
 
 
 
